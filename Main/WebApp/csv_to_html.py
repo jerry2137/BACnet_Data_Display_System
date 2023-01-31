@@ -20,7 +20,7 @@ def append_table(soup, building):
             table_df = pd.concat([table_df, pd.DataFrame([['\\'] * table_df.shape[1]] * (5 - len(table_df)), columns=table_df.columns)])
 
             html_df = table_df.to_html(index=False, header=False, table_id='table_' + str(number))
-            html_df = html_df.replace('border="1" ', '').replace('<td>\\', '<td id="hide">\\<br />\\').replace('\\n', '<br />')
+            html_df = html_df.replace('border="1" ', '').replace('<td>\\', '<td id="hide">\\<br />\\').replace('\\n', '<br />').replace('\\r', '')
 
             table = bs(html_df, 'html.parser')
             chinese, english = df_name['Name'][name].split('\n')
