@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+    text-align: center;
+    font-size: 275%;
+}
+
+body {
+    height: 100%;
+    margin: 0%;
+}
+
+main {
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    height: 100%;
+    width: 25%;
+    line-height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5%;
+    justify-content: space-around;
+}
+
+.seg {
+    height: 32%;
+    background-color: black;
+    position: relative;
+}
+
+#logo {
+    width: 100%;
+}
+
+article {
+    height: 98%;
+    width: 75%;
+    margin: 0.5%;
+    position: relative;
+    background-color: black;
+}
+
+.dataframe {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+.dataframe thead {
+    background-color: darkgray;
+    height: 20%;
+}
+
+.dataframe tbody {
+    font-size: 75%;
+}
+
+.dataframe td:nth-child(1) {
+    text-align: left;
+    padding-left: 2%;
+    width: 60%;
+}
+
+.dataframe td:nth-child(2) {
+    width: 10%;
+}
+
+.dataframe td:nth-child(3) {
+    width: 20%;
+}
+
+video {
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+footer {
+    height: 9%;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    color: white;
+    background-color: black;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+.display > * {
+    display: none;
+    position: absolute;
+}
+
+#hide {
+    opacity: 0%;
+}

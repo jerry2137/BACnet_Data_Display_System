@@ -1,0 +1,16 @@
+Shown Name,Value,Unit
+Avg. Energy Comsumption,1,kWh/flat
+Water Comsumption,2,m3/flat
+Gas Comsumption,3,MJ/flat
+Last Year Avg. Energy Comsumption,4,kWh/flat
+Last Year Water Comsumption,5,m3/flat
+Last Year Gas Comsumption,6,MJ/flat
+Avg. Communal Energy Consumption,7,kWh/flat
+Last Year Avg. Communal Energy Consumption,8,kWh/flat
+Cumulative Energy Consumption,9,kWh
+Last Year Cumulative Energy Consumption,10,kWh
+Instantaneous Output Power,11,kW
+Total Output Power,12,kW
+Individual Output Power,13,kW
+Maximum Output Power,14,kW
+Cumulative Output Power,15,kW

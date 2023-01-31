@@ -1,0 +1,9 @@
+BAC0
+bacpypes
+bokeh
+pandas
+flask
+beautifulsoup4
+waitress
+
+

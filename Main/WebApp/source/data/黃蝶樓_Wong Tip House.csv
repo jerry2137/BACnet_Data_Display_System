@@ -1,0 +1,31 @@
+Object Name,Shown Name,Value,Unit,Page
+B02-KWH.FLAT.LM,"上月住戶平均用電量
+Last Month Tenant Average Energy Consumption",55.0,kWh/flat,1
+B02-WATER.FLAT.LM,"上月住戶平均用水量
+Last Month Tenant Average Water Consumption",31.0,m³/flat,2
+B02-GAS.FLAT.LM,"上月住戶平均煤氣用量
+Last Month Tenant Average Gas Consumption",110.0,MJ/flat,3
+B02-KWH.FLAT.LYR,"去年住戶平均用電量
+Last Year Tenant Average Energy Consumption",60.0,kWh/flat,1
+B02-WATER.FLAT.LYR,"去年住戶平均用水量
+Last Year Tenant Average Water Consumption",32.0,m³/flat,2
+B02-GAS.FLAT.LYR,"去年住戶平均煤氣用量
+Last Year Tenant Average Gas Consumption",85.0,MJ/flat,3
+B02-KWH.COM.LM,"上月公共設施平均用電量
+Last Month Average Communal Energy Consumption",85.0,kWh/flat,4
+B02-KWH.COM.LYR,"去年公共設施平均用電量
+Last Year Average Communal Energy Consumption",65.0,kWh/flat,4
+B02-KWH.TEN.TM,"本月住戶累計用電量
+This Month Tenant Cumulative Energy Consumption",45.0,kWh,1
+B02-KWH.TEN.LM,"上月住戶累計用電量
+Last Month Tenant Cumulative Energy Consumption",50.0,kWh,1
+B02-PV.KW,"瞬時輸出功率
+Instantaneous Output Power",55.0,kW,5
+B02-PV.KWH,"總發電量
+Total Energy Yield",30.0,kWh,5
+B02-PV.KWH.DAY,"本日發電量
+Today Energy Yield",35.0,kWh,5
+B02-PV.KW.MAX,"本日最大輸出功率
+Today Maximum Output Power",35.0,kW,5
+B02-PV.TIME,"累計系統運行日數
+Cumulative System Run Time",10.0,Days,5

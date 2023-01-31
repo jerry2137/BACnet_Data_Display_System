@@ -1,0 +1,31 @@
+BACnet Object Name,Shown Name,Unit,Page
+KWH.FLAT.LM,"上月住戶平均用電量
+Last Month Tenant Average Energy Consumption",kWh/flat,1
+WATER.FLAT.LM,"上月住戶平均用水量
+Last Month Tenant Average Water Consumption",m³/flat,2
+GAS.FLAT.LM,"上月住戶平均煤氣用量
+Last Month Tenant Average Gas Consumption",MJ/flat,3
+KWH.FLAT.LYR,"去年住戶平均用電量
+Last Year Tenant Average Energy Consumption",kWh/flat,1
+WATER.FLAT.LYR,"去年住戶平均用水量
+Last Year Tenant Average Water Consumption",m³/flat,2
+GAS.FLAT.LYR,"去年住戶平均煤氣用量
+Last Year Tenant Average Gas Consumption",MJ/flat,3
+KWH.COM.LM,"上月公共設施平均用電量
+Last Month Average Communal Energy Consumption",kWh/flat,4
+KWH.COM.LYR,"去年公共設施平均用電量
+Last Year Average Communal Energy Consumption",kWh/flat,4
+KWH.TEN.TM,"本月住戶累計用電量
+This Month Tenant Cumulative Energy Consumption",kWh,1
+KWH.TEN.LM,"上月住戶累計用電量
+Last Month Tenant Cumulative Energy Consumption",kWh,1
+PV.KW,"瞬時輸出功率
+Instantaneous Output Power",kW,5
+PV.KWH,"總發電量
+Total Energy Yield",kWh,5
+PV.KWH.DAY,"本日發電量
+Today Energy Yield",kWh,5
+PV.KW.MAX,"本日最大輸出功率
+Today Maximum Output Power",kW,5
+PV.TIME,"累計系統運行日數
+Cumulative System Run Time",Days,5

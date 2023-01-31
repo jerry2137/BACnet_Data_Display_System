@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="" http-equiv="refresh"/>
+  <link type="text/css" rel="stylesheet" href="../static/css/style.css" />
+  <script src="../static/css/jquery.min.js" type="text/javascript"></script>
+ </head>
+ <body>
+  <main>
+   <aside>
+    <div class="seg flex_center display" id="system">
+     <div>
+      能源監控系統
+      <br/>
+      Energy Monitoring System
+     </div>
+     <img id="logo" src="../static/css/hkha logo.jpg"/>
+    </div>
+    <div class="seg flex_center" id="building">
+     珍蝶樓
+     <br/>
+     Chun Tip House
+    </div>
+    <div class="seg flex_center" id="time">
+    </div>
+   </aside>
+   <article>
+    <section class="full display" id="tables">
+    </section>
+    <section class="display">
+     <video autoplay="" loop="" muted="" src="../static/css/VTS.mp4">
+     </video>
+     <video muted="" src="https://glpjt.s3.amazonaws.com/so/av/vs2s3.mp4">
+     </video>
+    </section>
+   </article>
+  </main>
+  <footer class="display flex_center">
+   <div>
+    Fu Tip Estate
+   </div>
+   <div>
+    富蝶邨
+   </div>
+  </footer>
+  <script>
+    function cycle(target) {
+        var objects = $(target),
+          now = objects.filter(":visible"),
+          next = now.next().length ? now.next() : objects.first();
+
+        now.fadeOut();
+        next.fadeIn();
+      }
+
+    function refreshTime() {
+      var today = new Date(),
+        day = today.getDay(),
+        daylist = ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
+        date = (today.getMonth() + 1) + '月' + today.getDate() + '日',
+        time = (("0" + today.getHours()).slice(-2)) + ":" + (("0" + today.getMinutes()).slice(-2));
+      
+      $("#time").get(0).innerHTML = date + '<br>' + daylist[day] + '<br>' + time;
+    }
+
+    function display(time, target, timeout){
+      $(target).get(0).style.display = "block";
+      let cycles = setInterval(cycle, time, target);
+      if(timeout){
+        setTimeout(() => {
+          clearInterval(cycles);
+        }, timeout-1);
+      }
+    }
+
+    function cycle_vt(time, target, timeout) {
+      display(time, target, timeout);
+
+      var video = $("video").eq(0);
+
+      setTimeout(() => {
+        $(target).filter(":visible").fadeOut();
+        video.fadeIn();
+        video.get(0).play();
+        video.on('ended',function(){video.fadeOut();});
+      }, timeout);
+    }
+
+    var videos = $("video"),
+      tables_time = 90000,
+      system_cycle = 3000,
+      footer_cycle = 3000,
+      table_cycle = 3000,
+      total_duration = tables_time;
+
+    Promise.all(videos.map(function() {
+      return new Promise(resolve => {
+        $(this).one("loadedmetadata", resolve);
+      });
+    })).then(() => {
+      for(let i=0; i<videos.length; i++){
+        total_duration += (videos[i].duration * 1000);
+      }
+      display(system_cycle, "#system > *", 0);
+      display(footer_cycle, "footer > div", 0);
+
+      refreshTime();
+      setInterval(refreshTime, 1000);
+
+      cycle_vt(table_cycle, "#tables > div", tables_time);
+      setInterval(cycle_vt, total_duration, table_cycle, "#tables > div", tables_time);
+    });
+  </script>
+ </body>
+</html>

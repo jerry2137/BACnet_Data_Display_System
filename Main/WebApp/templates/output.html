@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" content="" http-equiv="refresh"/>
+  <link href="../static/style.css" rel="stylesheet" type="text/css"/>
+  <script src="../static/jquery.min.js" type="text/javascript"></script>
+ </head>
+ <body>
+  <main>
+   <aside>
+    <div class="seg flex_center display" id="system">
+     <div>
+      能源監控系統
+      <br/>
+      Energy Monitoring System
+     </div>
+     <img id="logo" src="../static/hkha_logo.jpg"/>
+    </div>
+    <div class="seg flex_center" id="building">
+     黃蝶樓
+     <br/>
+     Wong Tip House
+    </div>
+    <div class="seg flex_center" id="time">
+    </div>
+   </aside>
+   <article>
+    <section class="full display" id="tables">
+     <div class="full">
+      <table class="dataframe" id="table_1">
+       <thead>
+        <tr>
+         <th colspan="3">
+          住戶用電量
+          <br/>
+          Tenant Energy Consumption
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          上月住戶平均用電量
+          <br/>
+          Last Month Tenant Average Energy Consumption
+         </td>
+         <td>
+          55.0
+         </td>
+         <td>
+          kWh/flat
+         </td>
+        </tr>
+        <tr>
+         <td>
+          去年住戶平均用電量
+          <br/>
+          Last Year Tenant Average Energy Consumption
+         </td>
+         <td>
+          60.0
+         </td>
+         <td>
+          kWh/flat
+         </td>
+        </tr>
+        <tr>
+         <td>
+          本月住戶累計用電量
+          <br/>
+          This Month Tenant Cumulative Energy Consumption
+         </td>
+         <td>
+          45.0
+         </td>
+         <td>
+          kWh
+         </td>
+        </tr>
+        <tr>
+         <td>
+          上月住戶累計用電量
+          <br/>
+          Last Month Tenant Cumulative Energy Consumption
+         </td>
+         <td>
+          50.0
+         </td>
+         <td>
+          kWh
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="full">
+      <table class="dataframe" id="table_2">
+       <thead>
+        <tr>
+         <th colspan="3">
+          住戶用水量
+          <br/>
+          Tenant Water Consumption
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          上月住戶平均用水量
+          <br/>
+          Last Month Tenant Average Water Consumption
+         </td>
+         <td>
+          31.0
+         </td>
+         <td>
+          m³/flat
+         </td>
+        </tr>
+        <tr>
+         <td>
+          去年住戶平均用水量
+          <br/>
+          Last Year Tenant Average Water Consumption
+         </td>
+         <td>
+          32.0
+         </td>
+         <td>
+          m³/flat
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="full">
+      <table class="dataframe" id="table_3">
+       <thead>
+        <tr>
+         <th colspan="3">
+          住戶煤氣用量
+          <br/>
+          Tenant Gas Consumption
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          上月住戶平均煤氣用量
+          <br/>
+          Last Month Tenant Average Gas Consumption
+         </td>
+         <td>
+          110.0
+         </td>
+         <td>
+          MJ/flat
+         </td>
+        </tr>
+        <tr>
+         <td>
+          去年住戶平均煤氣用量
+          <br/>
+          Last Year Tenant Average Gas Consumption
+         </td>
+         <td>
+          85.0
+         </td>
+         <td>
+          MJ/flat
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="full">
+      <table class="dataframe" id="table_4">
+       <thead>
+        <tr>
+         <th colspan="3">
+          公共設施用電量
+          <br/>
+          Communal Energy Consumption
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          上月公共設施平均用電量
+          <br/>
+          Last Month Average Communal Energy Consumption
+         </td>
+         <td>
+          85.0
+         </td>
+         <td>
+          kWh/flat
+         </td>
+        </tr>
+        <tr>
+         <td>
+          去年公共設施平均用電量
+          <br/>
+          Last Year Average Communal Energy Consumption
+         </td>
+         <td>
+          65.0
+         </td>
+         <td>
+          kWh/flat
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+        <tr>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+         <td id="hide">
+          \
+          <br/>
+          \
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="full">
+      <table class="dataframe" id="table_5">
+       <thead>
+        <tr>
+         <th colspan="3">
+          太陽能系統
+          <br/>
+          Photovoltaic System
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          瞬時輸出功率
+          <br/>
+          Instantaneous Output Power
+         </td>
+         <td>
+          55.0
+         </td>
+         <td>
+          kW
+         </td>
+        </tr>
+        <tr>
+         <td>
+          總發電量
+          <br/>
+          Total Energy Yield
+         </td>
+         <td>
+          30.0
+         </td>
+         <td>
+          kWh
+         </td>
+        </tr>
+        <tr>
+         <td>
+          本日發電量
+          <br/>
+          Today Energy Yield
+         </td>
+         <td>
+          35.0
+         </td>
+         <td>
+          kWh
+         </td>
+        </tr>
+        <tr>
+         <td>
+          本日最大輸出功率
+          <br/>
+          Today Maximum Output Power
+         </td>
+         <td>
+          35.0
+         </td>
+         <td>
+          kW
+         </td>
+        </tr>
+        <tr>
+         <td>
+          累計系統運行日數
+          <br/>
+          Cumulative System Run Time
+         </td>
+         <td>
+          10.0
+         </td>
+         <td>
+          Days
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </section>
+    <section class="display" id="videos">
+     <video autoplay="" muted="" src="../static/sample.mp4">
+     </video>
+     <video autoplay="" muted="" src="../static/vs2s3.mp4">
+     </video>
+     <video autoplay="" muted="" src="../static/VTS.mp4">
+     </video>
+    </section>
+   </article>
+  </main>
+  <footer class="display flex_center">
+   <div>
+    富蝶邨
+   </div>
+   <div>
+    Fu Tip Estate
+   </div>
+  </footer>
+  <script src="../static/motion.js" type="text/javascript"></script>
+ </body>
+</html>
